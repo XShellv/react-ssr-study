@@ -1,0 +1,32 @@
+{
+  "name": "react-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:**",
+    "dev:start": "nodemon \"./build/bundle.js\"",
+    "dev:build:server": "webpack --config webpack.server.js --watch",
+    "dev:build:client": "webpack --config webpack.client.js --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "webpack-cli": "^3.3.6",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "webpack": "^4.36.1",
+    "webpack-merge": "^4.2.1"
+  }
+}
